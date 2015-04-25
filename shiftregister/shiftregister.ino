@@ -7,8 +7,7 @@ byte leds = 0;
  
 void setup() 
 {
-    pinMode(latchPin, OUTPUT);
-
+  pinMode(latchPin, OUTPUT);
   pinMode(dataPin, OUTPUT); 
   pinMode(clockPin, OUTPUT);
   pinMode(outputEnablePin, OUTPUT); 
@@ -26,11 +25,13 @@ void loop()
     updateShiftRegister();
     delay(500);
   }
+
   for (byte b = 255; b > 0; b--)
   {
     setBrightness(b);
     delay(50);
   }
+
 }
  
 void updateShiftRegister()
