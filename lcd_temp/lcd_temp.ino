@@ -20,7 +20,7 @@ void loop() {
   lcd.print("Temp ");
   lcd.setCursor(5, 0);
   lcd.print(tempC);
-  lcd.setCursor(10, 0);
+  lcd.setCursor(10cd, 0);
   lcd.print("C");
   
   int lightValue = analogRead(lightPin);
